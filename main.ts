@@ -34,6 +34,13 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
     basic.pause(10)
 })
+radio.onReceivedValue(function (name, value) {
+    if (value == 25) {
+        led.setBrightness(255)
+    } else if (value == 0) {
+        led.setBrightness(100)
+    }
+})
 let re = 0
 let l = 0
 let i = 0

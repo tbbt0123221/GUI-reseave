@@ -28,10 +28,11 @@ def on_received_number(receivedNumber):
         for index4 in range(re % 5):
             led.plot(l, i)
             l += -1
-    basic.pause(1000)
+    basic.pause(10)
 radio.on_received_number(on_received_number)
 
 re = 0
 l = 0
 i = 0
-radio.set_group(23)
+radio.set_group(11)
+basic.show_number(0)
