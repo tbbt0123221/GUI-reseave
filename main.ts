@@ -38,7 +38,7 @@ radio.onReceivedValue(function (name, value) {
     if (value == 25) {
         led.setBrightness(255)
     } else if (value == 0) {
-        led.setBrightness(100)
+        led.setBrightness(50)
     }
 })
 let re = 0
